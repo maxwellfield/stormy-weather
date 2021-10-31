@@ -1,22 +1,57 @@
+
+/* Google Fonts Call-in */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 body {
-    background-image: url("stormy-weather-background.jpg");
-    color: white;
+    background: url(stormy-weather-background.jpg);
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+    color: #fff;
+    margin: 0;
 }
-#device {
-    float: right;
+header {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
 }
-.topbox {
-    background-color: rgb(0, 0, 0, 0.5);
-    height: 75px;
+header h2 {
+    font-size: 3rem;
+    margin: 0;
 }
-.innerbox {
-    border: 2px solid white;
-    text-align: center;
+nav a {
+    opacity: 0.75;
+}
+nav a:hover {
+    opacity: 1;
+}
+blockquote {
+    background: rgba(0,0,0,0.5);
+    border: 7px double #FFF;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    width: 20%;
+}
+.device-mobile {
+    content: url(089-mobile.png)
+}
+.device-tablet {
+    content: url(091-tablet.png)
+}
+.device-desktop {
+    content: url(087-display.png)
 }
 
-.outerbox {
-    border: 2px solid white;
-    padding: 1px;
-    width: 33%;
-    margin: 40px;
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .device-mobile,
+    .device-tablet,
+    .device-desktop {
+        width: 30%;
+    }
+    blockquote {
+        width: 40%;
+    }
 }
